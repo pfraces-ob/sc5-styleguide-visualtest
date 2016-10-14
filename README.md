@@ -4,15 +4,14 @@ A gulp plugin for automatic visual testing between different versions of compone
 
 The screenshots are taken in Chrome via PhantomJS.
 
-## Technical requirements
-
-You need to have PhantomJS installed. After that:
+## Installation
 
 ```
 npm install --save-dev sc5-styleguide-visualtest
 ```
 
 ## Taking the grid screenshots
+
 First you will need to create a set of grid images. They are usually taken from production version of the Style Guide.
 It is nice to have a Gulp task for it because you will need to remake the grid screenshots after every interface change.
 
@@ -57,6 +56,7 @@ Store the configuration files and the screenshots in teh repository. But don't f
 package if you provide it.
 
 ## Running tests
+
 Tests will compare the grid screenshots with the current view of your Style Guide.
 
 ```js
@@ -104,6 +104,7 @@ This is how different problems look when spotted:
 ![](images/wrong-height.png)
 
 ## Providing options
+
 By default the plugin takes screenshots in desktop resolution. However you may provide
 your own options and take screenshots in different configuration.
 
